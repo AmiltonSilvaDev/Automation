@@ -27,8 +27,8 @@ public class Runner {
         driver.quit();
     }
 
-    @Test(testName = "Rastrear encomenda com código válido")
-    public void validadeOne(){
+    @Test(testName = "CT01- Rastrear encomenda com código válido")
+    public void validadeOne() {
         LoggiPO loggiPO = new LoggiPO(driver);
         loggiPO.clickPopUp();
         loggiPO.validatePageHome();
@@ -37,8 +37,35 @@ public class Runner {
         trackerPO.validatePageTracker();
         trackerPO.insertTrackCode("AM040218849LO");
         trackerPO.clickTrackReceiver();
-        trackerPO.insertCpf("057.195.813-32");
+        trackerPO.sendCpf();
         trackerPO.clickBlueButton();
         trackerPO.validateDateAndReceiver();
+    }
+
+    @Test(testName = "CT02- Rastrear encomenda com código inválido")
+    public void validadeTwo() {
+        LoggiPO loggiPO = new LoggiPO(driver);
+        loggiPO.clickPopUp();
+        loggiPO.validatePageHome();
+        loggiPO.clickTrackButton();
+        TrackerPO trackerPO = new TrackerPO(driver);
+        trackerPO.validatePageTracker();
+        trackerPO.insertTrackCode("BR123123123AM");
+        trackerPO.clickTrackReceiver();
+        trackerPO.validateTextInvalidCode();
+    }
+    @Test(testName = "CT03- Rastrear encomenda com código válido e CPF inválido")
+    public void validadeThree() {
+        LoggiPO loggiPO = new LoggiPO(driver);
+        loggiPO.clickPopUp();
+        loggiPO.validatePageHome();
+        loggiPO.clickTrackButton();
+        TrackerPO trackerPO = new TrackerPO(driver);
+        trackerPO.validatePageTracker();
+        trackerPO.insertTrackCode("AM040218849LO");
+        trackerPO.clickTrackReceiver();
+        trackerPO.insertCpf("527.272.822-82");
+        trackerPO.clickBlueButton();
+        trackerPO.validateTextInvalidCpf();
     }
 }

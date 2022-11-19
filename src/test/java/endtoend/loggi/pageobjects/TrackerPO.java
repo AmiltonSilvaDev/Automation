@@ -31,6 +31,9 @@ public class TrackerPO {
     public void insertCpf(String cpf) {
         elementSendKeys(driver, By.cssSelector("#root > div > div > div > div > div:nth-child(4) > div > div > div > div > div > div > div > div.no-gutter.col-xs-12._2ZHa1CY6QxOiqQXxhVecU1 > input"), cpf);
     }
+    public void sendCpf() {
+        insertCpf("057.195.813-32");
+    }
 
     public void clickBlueButton() {
         elementClick(driver, By.cssSelector("#root > div > div > div > div > div:nth-child(4) > div > div > div > button > i"));
@@ -40,6 +43,18 @@ public class TrackerPO {
         WebElement element = getElement(driver, By.cssSelector("#root > div > div.no-gutter.menu-view > div > div:nth-child(2) > div.eta-message.gutter-xs-top-onehalf.gutter-xs-bottom-onehalf"));
         boolean flag = element.isDisplayed();
         Assert.assertTrue(flag, "Element not found!");
+    }
+
+    public void validateTextInvalidCode(){
+        WebElement element = getElement(driver, By.cssSelector("#root > div > div > div.no-gutter.display-flex.flex-direction-xs-column.align-items-xs-center > div.col-xs-12.gutter-xs-bottom-onehalf > div > div > div.no-gutter.col-xs-12.n0v0JyoYkOdiQu-pfwgw7 > div > div > div:nth-child(2) > div"));
+        boolean flag = element.isDisplayed();
+        Assert.assertTrue(flag, "Text not found");
+    }
+
+    public void validateTextInvalidCpf(){
+        WebElement element = getElement(driver, By.cssSelector("#root > div > div > div > div > div:nth-child(4) > div > div > div > div > div._309fz1WaKdUH0CGotxz5Xv > span"));
+        boolean flag = element.isDisplayed();
+        Assert.assertTrue(flag, "Text not found");
     }
 }
 

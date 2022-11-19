@@ -21,8 +21,8 @@ public class LoggiPO {
 
     public void validatePageHome(){
         WebElement element = getElement(driver, By.cssSelector("#__next > section.style__Section-sc-mv9llo-0.lbzTtt > div.GridPattern-sc-x2w6i8-0.style__HeroGrid-sc-mv9llo-1.hTLRlO.hBLfvX > div.style__ButtonContainer-sc-mv9llo-4.dEJIfl.appear > a:nth-child(2) > button > span"));
-        String text = element.getText();
-        Assert.assertEquals(text,"Quero rastrear um pacote","Text not found!");
+        String flag = element.getText();
+        Assert.assertEquals(flag,"Quero rastrear um pacote", "Text not found");
     }
     public void clickTrackButton(){
         elementClick(driver, By.cssSelector("#__next > section.style__Section-sc-mv9llo-0.lbzTtt > div.GridPattern-sc-x2w6i8-0.style__HeroGrid-sc-mv9llo-1.hTLRlO.hBLfvX > div.style__ButtonContainer-sc-mv9llo-4.dEJIfl.appear > a:nth-child(2) > button > span"));
