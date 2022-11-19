@@ -1,0 +1,10 @@
+Funcionalidade: Login amazon
+
+EU como cliente da Amazon
+QUERO efetuar login
+PARA que eu possa ver meus pedidos
+
+CT01-  Efetuar login com dados válidos.
+CT02-  Efetuar login com dados inválidos.
+CT03-  Efetuar login sem inserir dados.
+

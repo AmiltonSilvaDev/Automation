@@ -1,0 +1,12 @@
+Funcionalidade: Pesquisa no Google.
+
+EU como usuário do Google;
+QUERO efetuar uma busca sobre Selenium WebDriver;
+PARA que eu possa acessar a página da documentação.
+
+Pré condição: estar na home do google.
+CT01: Efetuar busca digitando Selenium WebDriver usando o botão "ENTER".
+CT02: Efetuar busca digitando Selenium WebDriver usando o botão de busca.
+CT03: Efetuar busca digitando Selenium WebDriver usando o botão "estou com sorte".
+CT04: Efetuar busca sem inserir dados usando o botão de busca.
+CT05: Efetuar busca sem inserir dados usando o botão "estou com sorte".

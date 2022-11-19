@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Automation"
+           tests="5"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="10,490">
+    <properties></properties>
+
+
+
+            <testcase
+                name="validationFive"
+                time="3,506"
+                classname="endtoend.google.tests.Runner">
+            </testcase>
+            <testcase
+                name="validationTwo"
+                time="2,731"
+                classname="endtoend.google.tests.Runner">
+            </testcase>
+            <testcase
+                name="validationFor"
+                time="0,118"
+                classname="endtoend.google.tests.Runner">
+            </testcase>
+            <testcase
+                name="validationOne"
+                time="1,978"
+                classname="endtoend.google.tests.Runner">
+            </testcase>
+            <testcase
+                name="validationThree"
+                time="2,157"
+                classname="endtoend.google.tests.Runner">
+            </testcase>
+</testsuite>

@@ -1,0 +1,43 @@
+funcionalidades
+Loggi
+
+Backlog
+- Quero rastrear um pacote
+- Quero ser cliente
+- Fazer entregas
+
+Funcionalidade: Quero rastrear um pacote
+Objetivo: permitir que o usuário rastreei um pacote por meio de um código disponibilizado
+
+Critérios de aceite:
+- Para efetuar um rastreio deve ser informado um código válido e o CPF do destinatário
+- No status “em processamento” deve ser possível informar características do imóvel, tipo do imóvel, um recebedor, uma descrição do lugar ou um ponto de referência.
+- No status “finalizado” deve ser possível visualizar o recebedor e data de entrega.
+- Com um código inválido, deve ser emitida uma mensagem informando que o código é inválido ou que não foi possível encontrar o código.
+- Os dados inseridos para facilitar a entrega devem ser editáveis até que a entrega seja realizada.
+- Deve haver um mapa contendo um ponto de referência do endereço.
+
+Massa de dados
+
+STATUS:    Finalizado        AM040218849LO
+           Processamento     AL213348903BR
+           Inválido          BR123123123AM
+
+CPF:    057.195.813-32
+.
+.
+.
+.
+CT01            Rastrear encomenda com código válido.
+Pré condição:   Estar na página da Loggi.
+R.E:            Deve ser possível visualizar o recebedor e data de entrega.
+Steps:
+                1: Clicar no botão "Quero rastrear um pacote";
+                2: Clicar no campo "Código de rastreamento"(massa de dados);
+                3: Digitar o código de rastreio;
+                4: Clicar no botão "Acompanhar pedido".
+                5: Verificar status do pacote;
+                6: Clicar no campo "CPF"(massa de dados);
+                7: Digitar o CPF.
+                8: Clicar no botão azul com uma seta pra direita;
+                9: Verificar recebedor e data de entrega.

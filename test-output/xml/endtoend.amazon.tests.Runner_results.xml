@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Automation"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="10,806">
+    <properties></properties>
+
+
+
+            <testcase
+                name="validationOne"
+                time="6,553"
+                classname="endtoend.amazon.tests.Runner">
+            </testcase>
+            <testcase
+                name="validationThree"
+                time="2,093"
+                classname="endtoend.amazon.tests.Runner">
+            </testcase>
+            <testcase
+                name="validationTwo"
+                time="2,160"
+                classname="endtoend.amazon.tests.Runner">
+            </testcase>
+</testsuite>
