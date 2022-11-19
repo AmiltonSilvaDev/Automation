@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="Automation"
-           tests="1"
+           tests="3"
            failures="0"
            errors="0"
            skipped="0"
-           time="11,138">
+           time="34,813">
     <properties></properties>
 
 
 
             <testcase
+                name="validadeThree"
+                time="11,940"
+                classname="endtoend.loggi.tests.Runner">
+            </testcase>
+            <testcase
                 name="validadeOne"
-                time="11,138"
+                time="12,587"
+                classname="endtoend.loggi.tests.Runner">
+            </testcase>
+            <testcase
+                name="validadeTwo"
+                time="10,286"
                 classname="endtoend.loggi.tests.Runner">
             </testcase>
 </testsuite>
