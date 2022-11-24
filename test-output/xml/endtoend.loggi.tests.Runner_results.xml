@@ -4,24 +4,24 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="34,813">
+           time="34,454">
     <properties></properties>
 
 
 
             <testcase
+                name="validadeTwo"
+                time="9,837"
+                classname="endtoend.loggi.tests.Runner">
+            </testcase>
+            <testcase
                 name="validadeThree"
-                time="11,940"
+                time="11,063"
                 classname="endtoend.loggi.tests.Runner">
             </testcase>
             <testcase
                 name="validadeOne"
-                time="12,587"
-                classname="endtoend.loggi.tests.Runner">
-            </testcase>
-            <testcase
-                name="validadeTwo"
-                time="10,286"
+                time="13,554"
                 classname="endtoend.loggi.tests.Runner">
             </testcase>
 </testsuite>

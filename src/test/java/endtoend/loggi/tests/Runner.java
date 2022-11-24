@@ -54,6 +54,7 @@ public class Runner {
         trackerPO.clickTrackReceiver();
         trackerPO.validateTextInvalidCode();
     }
+
     @Test(testName = "CT03- Rastrear encomenda com código válido e CPF inválido")
     public void validadeThree() {
         LoggiPO loggiPO = new LoggiPO(driver);

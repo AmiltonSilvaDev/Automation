@@ -13,11 +13,11 @@ public class Utils {
         executor.executeScript("window.scrollBy(0," + pixels + ")");
     }
 
+
     //Metodo statico com dois parametros de objetos, que capituram um elemento após 10 seg
     public static WebElement getElement(WebDriver driver, By by) {
-        WebElement element = new WebDriverWait(driver, Duration.ofSeconds(10))
+        return new WebDriverWait(driver, Duration.ofSeconds(20))
                 .until(ExpectedConditions.elementToBeClickable(by));
-        return element;
     }
 
     //Metodo statico que  clica em um elemento ou campo
@@ -25,6 +25,7 @@ public class Utils {
         WebElement element = getElement(driver, by);
         element.click();
     }
+
     //Metodo para limpar dados inseridos
     public static void elementClear(WebDriver driver, By by) {
         WebElement element = getElement(driver, by);
@@ -38,6 +39,7 @@ public class Utils {
         element.clear();
         element.sendKeys(text);
     }
+
     public static void elementSendKeys(WebDriver driver, By by, String text, Keys key) {
         WebElement element = getElement(driver, by);
         element.click();
